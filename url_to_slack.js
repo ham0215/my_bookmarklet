@@ -1,10 +1,10 @@
 javascript:(function(){
   const url = '';
-  const body = JSON.stringify({ payload: { text: "hogehoge" } });
-  const method = "POST";
-  const headers = {
-    'Accept': 'application/json',
-    'Content-Type': 'application/json'
-  };
-  fetch(url, {method, headers, body}).then((res)=> res.json()).then(console.log).catch(console.error);
+  fetch(url, {
+    method: 'post',
+    headers: {
+      'Accept': 'application/json, text/plain, */*'
+    },
+    body: JSON.stringify({text: location.href})
+  }).then(response => console.log).catch(error => console.error);
 })()
