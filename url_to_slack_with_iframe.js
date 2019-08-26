@@ -2,7 +2,7 @@ javascript:(function(){
   const html = `
     <div>url to slack</div>
     <script type="text/javascript">
-        const url = 'https://hooks.slack.com/services/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';
+        const url = ''
         const body = JSON.stringify({ payload: { text: "hogehoge" } });
         const method = "POST";
         const headers = {
