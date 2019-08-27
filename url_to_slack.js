@@ -1,10 +1,10 @@
 javascript:(function(){
-  const url = '';
+  const url = ''; // TODO: set WebhookURL
   fetch(url, {
-    method: 'post',
+    method: 'POST',
     headers: {
-      'Accept': 'application/json, text/plain, */*'
+      'Accept': 'application/json'
     },
-    body: JSON.stringify({text: location.href})
+    body: JSON.stringify({ text: location.href })
   }).then(response => console.log).catch(error => console.error);
 })()
