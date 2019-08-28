@@ -6,5 +6,6 @@ javascript:(function(){
       'Accept': 'application/json'
     },
     body: JSON.stringify({ text: location.href })
-  }).then(response => console.log).catch(error => console.error);
+  }).then(response => console.log)
+    .catch(error => { alert('error!!'); onsole.error });
 })()
