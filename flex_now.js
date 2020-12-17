@@ -10,7 +10,7 @@ javascript:(function(){
     alert((t - nt) + '分、マイナスです');
   }
 
-  today = $('.jbc-table-bordered td:contains("勤務中")').next().text()
+  today = $('.jbc-table-bordered td:contains("勤務中")').next().text();
   const ms2 = today.split(':');
   if (ms2.length == 2) {
     const nt2 = nt - (Number(ms2[0]) * 60 + Number(ms2[1]));
